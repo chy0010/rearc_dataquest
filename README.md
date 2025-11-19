@@ -6,7 +6,7 @@
 - [Part 3: Data Analytics ](#-part-3-data-analytics)
 - [Part 4: Infrastructure as Code — AWS CDK](#-part-4-infrastructure-as-code--aws-cdk)
 - [Documentation](#-documentation)
-- [Contact](#-contact)
+
 
 ---
 
