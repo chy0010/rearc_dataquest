@@ -27,7 +27,7 @@ import re
 import sys
 from typing import Any
 
-# --------- Configuration (already set to your bucket & keys) ----------
+# --------- Configuration ( set to bucket & keys) ----------
 BUCKET = "rearc-dataquest-quest"
 TS_KEY = "pr.data.0.Current"
 POP_KEY = "us_population.json"
@@ -36,7 +36,7 @@ RESULTS_PREFIX = "results/"
 # --------- boto3 client ----------
 s3 = boto3.client("s3")
 
-# --------- Robust population JSON reader helpers ----------
+# --------- population JSON reader helpers ----------
 def _normalize_json_obj_to_df(obj: Any) -> pd.DataFrame:
     if isinstance(obj, list):
         return pd.json_normalize(obj)
@@ -154,7 +154,7 @@ def main():
     print("\n".join(keys))
     print()
 
-    # ---- Load time-series file from S3 ----
+    # ---- Loading time-series file from S3 ----
     print(f"Fetching time-series: s3://{BUCKET}/{TS_KEY}")
     try:
         ts_bytes = get_obj_bytes(BUCKET, TS_KEY)
@@ -162,7 +162,7 @@ def main():
         print("Failed to download time-series file:", e)
         sys.exit(1)
 
-    # Try to parse CSV with pandas sniffing common delimiters
+    # Trying to parse CSV with pandas sniffing common delimiters
     def read_time_series(bytes_blob: bytes) -> pd.DataFrame:
         try:
             text = bytes_blob.decode("utf-8")
@@ -184,7 +184,7 @@ def main():
 
     df_ts = read_time_series(ts_bytes)
 
-    # ---- Load population JSON from S3 ----
+    # ---- Loading population JSON from S3 ----
     print(f"\nFetching population JSON: s3://{BUCKET}/{POP_KEY}")
     try:
         pop_bytes = get_obj_bytes(BUCKET, POP_KEY)
