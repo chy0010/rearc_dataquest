@@ -49,7 +49,7 @@ for filename in files:
             print(f"{filename} downloaded!")
         else:
             print(f"Failed to download {filename}: Status {resp.status_code}")
-            continue  # Skip upload if download failed
+            continue 
 
     # Upload to S3 if not already present
     try:
