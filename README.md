@@ -128,5 +128,3 @@ Additional notes and design decisions are included throughout the repository.
 | `us_population.json` | https://rearc-dataquest-quest.s3.amazonaws.com/us_population.json |
 
 
-## 📬 Contact
-For questions or clarifications, feel free to reach out or create an issue.
