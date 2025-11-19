@@ -3,7 +3,7 @@
 ## 📑 Table of Contents
 - [Part 1: AWS S3 — Dataset Replication](#-part-1-aws-s3--dataset-replication)
 - [Part 2: API Integration — U.S. Census Population](#-part-2-api-integration--us-census-population)
-- [Part 3: Data Analytics — Jupyter Notebook](#-part-3-data-analytics--jupyter-notebook)
+- [Part 3: Data Analytics ](#-part-3-data-analytics)
 - [Part 4: Infrastructure as Code — AWS CDK](#-part-4-infrastructure-as-code--aws-cdk)
 - [Documentation](#-documentation)
 - [Contact](#-contact)
