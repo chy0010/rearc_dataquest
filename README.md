@@ -22,9 +22,9 @@
   - Does **not** rely on hard-coded filenames
 
 ### 📦 S3 Bucket
-```
+
 s3://rearc-dataquest-quest/
-```
+
 
 ### 📁 Files Included
 - `pr.data.0.Current`
@@ -47,21 +47,21 @@ s3://rearc-dataquest-quest/
 - Uploaded the processed file to the same S3 bucket.
 
 ### 📄 Script
-```
-part2_api_fetch/fetch_population_api.py
-```
+
+sync_population_to_s3.py
+
 
 ### 📁 Output
-```
+
 us_population.json
-```
+
 
 Stored in:
 `s3://rearc-dataquest-quest/`
 
 ---
 
-## 📊 Part 3: Data Analytics — Jupyter Notebook
+## 📊 Part 3: Data Analytics 
 
 ### 🔧 Technologies Used
 - Python
@@ -88,10 +88,9 @@ Filtered:
 
 Joined with corresponding population for that year.
 
-### 📒 Notebook
-```
-Part3_Data_Analytics.ipynb
-```
+### 📄 Script
+
+data_analytics.py
 
 ---
 
